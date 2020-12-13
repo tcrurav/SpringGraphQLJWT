@@ -10,4 +10,9 @@ public class BicyclesWithGraphQlApplication {
 		SpringApplication.run(BicyclesWithGraphQlApplication.class, args);
 	}
 
+//	@Bean(name = "dataSource")
+//	@ConfigurationProperties(prefix = "spring.datasource")
+//	public DataSource dataSource() {
+//		return (DataSource) DataSourceBuilder.create().build();
+//	}
 }

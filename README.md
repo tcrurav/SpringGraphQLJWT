@@ -1,13 +1,13 @@
-# Spring Project using GraphQL
+# Spring Project using GraphQL and JWT
 
-Just an example project with Spring as backend using GraphQL.
+Just an example project with Spring as backend using GraphQL and JWT.
 
 ## Getting Started
 
 Clone this project:
 
 ```
-$ git clone https://github.com/tcrurav/SpringGraphQL.git
+$ git clone https://github.com/tcrurav/SpringGraphQLJWT.git
 ```
 
 Open your Eclipse IDE and run this project as Spring boot App. If you don't know how, watch the following steps of this video: https://www.youtube.com/watch?v=DvzGf0cAlg4
@@ -21,7 +21,23 @@ Open your Eclipse IDE and run this project as Spring boot App. If you don't know
 
 Once you have followed all the steps above, run the project as Spring Boot App.
 
-If everything went well you can now try your backend using GraphiQL accessing through a web browser as you can see in the images below:
+If everything went well you can now try your backend authentication register:
+
+![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-register-postman.png)
+
+Now you should be able to login getting a token:
+
+![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-login-postman.png)
+
+To use the token obtained above just put it in a Bearer Authorization:
+
+![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-token-postman.png)
+
+And try any authenticated GraphQL query/mutation:
+
+![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-query-postman.png)
+
+If you deactivate JWT authentication you can test your GraphQL with GraphiQL accessing through a web browser as you can see in the images below:
 
 Query to show all bicycles:
 
@@ -34,10 +50,6 @@ Mutation to add a new bicycle:
 Query to show all bicycles now shows the new created bicycle:
 
 ![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-last_query.png)
-
-You can also query from Postman if you prefer:
-
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-query-postman.png)
 
 ## Prerequisites
 
@@ -68,3 +80,4 @@ Follow this video tutorial: https://www.youtube.com/watch?v=DvzGf0cAlg4
 * https://www.howtographql.com/. The Fullstack Tutorial for GraphQL.
 * https://dzone.com/articles/a-beginners-guide-to-graphql-with-spring-boot. Excellent tutorial as a basis to create a Spring boot project accessible through GraphQL.
 * https://www.baeldung.com/spring-graphql. Getting Started with GraphQL using Spring.
+* https://www.techgeeknext.com/spring/spring-boot-security-token-authentication-jwt-mysql. Excellent tutorial to learn JWT Authentication in Spring.

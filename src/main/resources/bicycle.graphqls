@@ -10,5 +10,6 @@ type Query {
 }
 
 type Mutation {
-	createBicycle(brand: String, model: String): Bicycle
+	createBicycle(brand: String, model: String): Bicycle,
+	deleteBicycle(id: ID): Boolean
 }

@@ -17,4 +17,9 @@ public class BicycleMutation implements GraphQLMutationResolver {
 		Bicycle bicycle = new Bicycle(brand, model);
 		return bicycleService.addBicycle(bicycle);
 	}
+	
+	public boolean deleteBicycle(long id) {
+		System.out.println(id);
+		return true;
+	}
 }
