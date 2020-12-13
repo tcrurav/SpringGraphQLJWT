@@ -23,33 +23,33 @@ Once you have followed all the steps above, run the project as Spring Boot App.
 
 If everything went well you can now try your backend authentication register:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-register-postman.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-register-postman.png)
 
 Now you should be able to login getting a token:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-login-postman.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-login-postman.png)
 
 To use the token obtained above just put it in a Bearer Authorization:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-token-postman.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-token-postman.png)
 
 And try any authenticated GraphQL query/mutation:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-query-postman.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-query-postman.png)
 
 If you deactivate JWT authentication you can test your GraphQL with GraphiQL accessing through a web browser as you can see in the images below:
 
 Query to show all bicycles:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-query.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-query.png)
 
 Mutation to add a new bicycle:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-mutation.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-mutation.png)
 
 Query to show all bicycles now shows the new created bicycle:
 
-![alt text](https://github.com/tcrurav/SpringGraphQL/blob/master/screenshots/screenshot-last_query.png)
+![alt text](https://github.com/tcrurav/SpringGraphQLJWT/blob/master/screenshots/screenshot-last_query.png)
 
 ## Prerequisites
 
